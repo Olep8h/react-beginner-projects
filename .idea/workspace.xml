@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1513a766-6c40-4c54-86cb-a433ee1d5a86" name="Changes" comment="">
+    <list default="true" id="1513a766-6c40-4c54-86cb-a433ee1d5a86" name="Changes" comment="a list of users onto some events. only frontend.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Success.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Success.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/User.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/User.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,8 +49,17 @@
       <option name="presentableId" value="Default" />
       <updated>1667579136404</updated>
       <workItem from="1667579188526" duration="136000" />
-      <workItem from="1667579398266" duration="8385000" />
+      <workItem from="1667579398266" duration="8742000" />
+      <workItem from="1667588426666" duration="1448000" />
     </task>
+    <task id="LOCAL-00001" summary="a list of users onto some events. only frontend.">
+      <created>1667588371756</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667588371756</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -67,5 +75,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="a list of users onto some events. only frontend." />
+    <option name="LAST_COMMIT_MESSAGE" value="a list of users onto some events. only frontend." />
   </component>
 </project>

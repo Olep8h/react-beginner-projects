@@ -1,33 +1,21 @@
 import React from 'react';
+import {Collection} from "./Collection";
 import './index.scss';
 
-function Collection({ name, images }) {
-  return (
-    <div className="collection">
-      <img className="collection__big" src={images[0]} alt="Item" />
-      <div className="collection__bottom">
-        <img className="collection__mini" src={images[1]} alt="Item" />
-        <img className="collection__mini" src={images[2]} alt="Item" />
-        <img className="collection__mini" src={images[3]} alt="Item" />
-      </div>
-      <h4>{name}</h4>
-    </div>
-  );
-}
 
 function App() {
   return (
     <div className="App">
-      <h1>Моя коллекция фотографий</h1>
+      <h1>My photo collection</h1>
       <div className="top">
         <ul className="tags">
-          <li className="active">Все</li>
-          <li>Горы</li>
-          <li>Море</li>
-          <li>Архитектура</li>
-          <li>Города</li>
+          <li className="active">All</li>
+          <li>Architecture</li>
+          <li>Nature</li>
+          <li>Portraits</li>
+          <li>Animals</li>
         </ul>
-        <input className="search-input" placeholder="Поиск по названию" />
+        <input className="search-input" placeholder="Search by name" />
       </div>
       <div className="content">
         <Collection

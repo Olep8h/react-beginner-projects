@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30e22c5a-6406-49ad-b83a-c1c59a60b012" name="Changes" comment="Currency Converter">
+    <list default="true" id="c6c20843-2cf7-49f9-8abd-7d3494b88001" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/data.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +43,14 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="30e22c5a-6406-49ad-b83a-c1c59a60b012" name="Changes" comment="quiz. questions about IT" />
+      <changelist id="c6c20843-2cf7-49f9-8abd-7d3494b88001" name="Changes" comment="" />
       <created>1667609321643</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667609321643</updated>
       <workItem from="1667609357886" duration="375000" />
       <workItem from="1667609755490" duration="1783000" />
+      <workItem from="1667834786681" duration="4993000" />
     </task>
     <servers />
   </component>

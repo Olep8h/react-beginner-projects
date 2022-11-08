@@ -8,7 +8,7 @@
   ],
   "collections": [
     {
-      "category": 2,
+      "category": 3,
       "name": "Greece",
       "photos": [
         "https://firebasestorage.googleapis.com/v0/b/my-photo-collection-1db46.appspot.com/o/msg-1259807811-78.jpg?alt=media&token=ffad2783-a924-491c-8da2-4571db844284",
@@ -21,7 +21,7 @@
       ]
     },
     {
-      "category": 1,
+      "category": 4,
       "name": "Animals",
       "photos": [
         "https://firebasestorage.googleapis.com/v0/b/my-photo-collection-1db46.appspot.com/o/IMG_5637%20-%20Copy.jpg?alt=media&token=3a0e8d90-4d72-4a48-bdcb-fa8a15f6c7ca",
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "category": 3,
+      "category": 1,
       "name": "Moon",
       "photos": [
         "https://firebasestorage.googleapis.com/v0/b/my-photo-collection-1db46.appspot.com/o/AGQA3643.jpg?alt=media&token=882c1b85-4939-4126-bf85-88ea3cc7d7e3",
@@ -55,10 +55,10 @@
       ]
     },
     {
-      "category": 3,
+      "category": 2,
       "name": "Girls",
       "photos": [
-        "https://firebasestorage.googleapis.com/v0/b/my-photo-collection-1db46.appspot.com/o/IMG_5862.jpg?alt=media&token=e6ec5261-e17f-4d33-8c52-da234641e63f"
+        "https://firebasestorage.googleapis.com/v0/b/my-photo-collection-1db46.appspot.com/o/IMG_5862.jpg?alt=media&token=e6ec5261-e17f-4d33-8c52-da234641e63f",
         "https://firebasestorage.googleapis.com/v0/b/my-photo-collection-1db46.appspot.com/o/IMG_4979.jpg?alt=media&token=267360d5-65dd-4e85-b60e-9b71e37d0ad1",
         "https://firebasestorage.googleapis.com/v0/b/my-photo-collection-1db46.appspot.com/o/IMG_4995.jpg?alt=media&token=dd153814-b695-4c5a-99ad-9ffc770ae9d4",
         "https://firebasestorage.googleapis.com/v0/b/my-photo-collection-1db46.appspot.com/o/IMG_5115.jpg?alt=media&token=de444770-d693-4304-8599-cbe3da4508d3",
@@ -67,7 +67,7 @@
       ]
     },
     {
-      "category": 4,
+      "category": 1,
       "name": "In the forest",
       "photos": [
         "https://firebasestorage.googleapis.com/v0/b/my-photo-collection-1db46.appspot.com/o/XLXI2385.JPG?alt=media&token=1b94f8d5-33f4-4981-beec-9fecf4ff7484",
@@ -83,8 +83,7 @@
         "https://firebasestorage.googleapis.com/v0/b/my-photo-collection-1db46.appspot.com/o/IMG_5048.jpg?alt=media&token=83d22d4c-0cf7-483b-b099-aea2dc14d8b9",
         "https://firebasestorage.googleapis.com/v0/b/my-photo-collection-1db46.appspot.com/o/msg-1259807811-1029.jpg?alt=media&token=7de3cb8e-5902-4132-8ad4-8c20be46585c",
         "https://firebasestorage.googleapis.com/v0/b/my-photo-collection-1db46.appspot.com/o/IMG_5107.jpg?alt=media&token=408d370e-7f37-44f8-a75f-5b6bb429fe3a",
-        "https://firebasestorage.googleapis.com/v0/b/my-photo-collection-1db46.appspot.com/o/IMG_5860.jpg?alt=media&token=864e0433-f7c9-47e6-a8c9-619819e31049",
-        "https://firebasestorage.googleapis.com/v0/b/my-photo-collection-1db46.appspot.com/o/YKLK5077.JPG?alt=media&token=4b3cc108-13da-40d9-a8d6-53a96f52e441"
+        "https://firebasestorage.googleapis.com/v0/b/my-photo-collection-1db46.appspot.com/o/IMG_5860.jpg?alt=media&token=864e0433-f7c9-47e6-a8c9-619819e31049"
       ]
     }
   ]

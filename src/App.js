@@ -2,9 +2,17 @@ import React from 'react';
 import {Collection} from "./Collection";
 import './index.scss';
 
+const cats = [
+{ "name": "All" },
+{ "name": "Nature" },
+{ "name": "Portraits" },
+{ "name": "Architecture" },
+{ "name": "Zoo" }
+]
+
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+// import { initializeApp } from "firebase/app";
+// import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -21,25 +29,35 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+// const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
 
 
 function App() {
+    const [categoryId, setCategoryId] = React.useState(0);
+    const [page, setPage] = React.useState(1);
+    const [isLoading, setIsLoading] = React.useState(true);
     const [searchValue, setSearchValue] = React.useState('');
     const [collections, setCollections] = React.useState([]);
 
     React.useEffect(() => {
-        fetch('https://6365b9d5046eddf1baf1db58.mockapi.io/inspired/v1/Photos')
+        setIsLoading(true);
+
+        const category = categoryId ? `category=${categoryId}` : '';
+
+        fetch(
+            `https://6365b9d5046eddf1baf1db58.mockapi.io/inspired/v1/Photos?page=${page}&limit=3&${category}`)
             .then((res) => res.json())
             .then((json) => {
                 setCollections(json);
             })
-            .catch(err => {
+            .catch((err) => {
                 console.warn(err);
                 alert(`Error while getting data`);
-            });
-    }, []);
+            })
+            .finally(() => setIsLoading(false));
+    }, [categoryId, page]);
+
 
 
   return (
@@ -47,11 +65,13 @@ function App() {
       <h1>My photo collection</h1>
       <div className="top">
         <ul className="tags">
-          <li className="active">All</li>
-          <li>Architecture</li>
-          <li>Nature</li>
-          <li>Portraits</li>
-          <li>Animals</li>
+            {cats.map((obj, i) => (
+                    <li
+                        onClick={() => setCategoryId(i)}
+                        className={categoryId === i ? 'active': ''} key={obj.name}>
+                        {obj.name}
+                    </li>
+                ))}
         </ul>
         <input value={searchValue}
                onChange={(e) => setSearchValue(e.target.value)}
@@ -59,19 +79,20 @@ function App() {
                placeholder="Search by name" />
       </div>
       <div className="content">
-            {collections.filter(obj => {
-                return obj.name.toLowerCase().includes(searchValue.toLowerCase());
-            }).map((obj, index) => (
-                <Collection key={index}
-                name={obj.name}
-                images={obj.photos}
-                />
+          {isLoading ? (
+              <h2>Loading...</h2>
+              ) : (
+              collections
+                .filter((obj) => obj.name.toLowerCase().includes(searchValue.toLowerCase()))
+                .map((obj, index) => <Collection key={index} name={obj.name} images={obj.photos}/>
                 ))}
       </div>
       <ul className="pagination">
-        <li>1</li>
-        <li className="active">2</li>
-        <li>3</li>
+          {
+            [...Array(5)].map((_, i) => (
+                <li onClick={() => setPage(i + 1)} className={page === i + 1 ? 'active' : ''}>
+                    {i + 1}</li>
+            ))}
       </ul>
     </div>
   );

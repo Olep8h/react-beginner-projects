@@ -26,6 +26,7 @@ const analytics = getAnalytics(app);
 
 
 function App() {
+    const [searchValue, setSearchValue] = React.useState('');
     const [collections, setCollections] = React.useState([]);
 
     React.useEffect(() => {
@@ -52,11 +53,16 @@ function App() {
           <li>Portraits</li>
           <li>Animals</li>
         </ul>
-        <input className="search-input" placeholder="Search by name" />
+        <input value={searchValue}
+               onChange={(e) => setSearchValue(e.target.value)}
+               className="search-input"
+               placeholder="Search by name" />
       </div>
       <div className="content">
-            {collections.map((obj) => (
-                <Collection
+            {collections.filter(obj => {
+                return obj.name.toLowerCase().includes(searchValue.toLowerCase());
+            }).map((obj, index) => (
+                <Collection key={index}
                 name={obj.name}
                 images={obj.photos}
                 />
